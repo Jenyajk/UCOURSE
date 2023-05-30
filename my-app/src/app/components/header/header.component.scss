@@ -1,0 +1,100 @@
+header {
+  display: flex;
+  background: #303240;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.wrap {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  //background: #303240;
+  justify-content: space-around;
+
+}
+
+.logo {
+  color: white;
+}
+
+.logo-wrap,
+.search-wrap,
+.login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: "SourceSansPro-Bold";
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  margin: 0;
+}
+
+.search__input {
+  background-color: #464A5A;
+}
+
+.ico-login {
+  color: white;
+
+}
+
+.user-login {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "SourceSansPro-Regular";
+  text-transform: none;
+  text-align: left;
+  height: 24px;
+  width: 59px;
+}
+
+.ico-logout {
+  color: white;
+}
+
+.button-logout {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "SourceSansPro-Regular";
+  text-transform: none;
+  text-align: left;
+  height: 24px;
+  width: auto;
+  opacity: 1;
+  background-color: #303240;
+  border: 0;
+  padding: 0;
+}
+
+.navigate {
+  display: flex;
+  color: #000000;
+  align-items: center;
+  width: 100%;
+
+  justify-content: space-around;
+}
+
+.menu-nav {
+  width: 100px;
+  background: rgba(70, 74, 90, 0.38);
+  text-align: center;
+  margin-top: 10px;
+}
+

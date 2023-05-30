@@ -1,0 +1,29 @@
+<header>
+  <div class="wrap">
+    <div class="logo-wrap">
+      <mat-icon class="logo">play_circle_outline</mat-icon>
+      <h1>UCOURSE</h1>
+    </div>
+
+    <div class="search-wrap">
+      <form class="search__form">
+        <input type="text" class="search__input" placeholder="Type to search" >
+      </form>
+    </div>
+    <div class="login">
+      <mat-icon class="ico-login" *ngIf="login" (click)="inLogin()">login</mat-icon>
+      <mat-icon  class="ico-logout" *ngIf="!login"  (click)="inLogin()">logout</mat-icon>
+      <span class="user-login" >{{userInfo}}</span>
+    </div>
+  </div>
+
+</header>
+<div class="navigate">
+  <div class="menu-nav">
+    <button mat-button [matMenuTriggerFor]="menu" >Courses</button>
+    <mat-menu #menu="matMenu" >
+      <button mat-menu-item>Math</button>
+      <button mat-menu-item>IT</button>
+    </mat-menu>
+  </div>
+</div>

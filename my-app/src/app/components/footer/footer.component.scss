@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #303240;
+  height: 60px;
+  width: 100%;
+  left: 0;
+}
+
+footer span {
+  position: absolute;
+  right: 84px;
+}
