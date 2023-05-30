@@ -4,19 +4,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from "./core/core.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from "@angular/material/menu";
+import {CommonModule} from "@angular/common";
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    BrowserAnimationsModule
+    MatMenuModule,
+    BrowserAnimationsModule,
+    CommonModule
   ],
   exports: [
-    CoreModule
+    CoreModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import {MatMenuModule} from "@angular/material/menu";
 
 
 
@@ -23,6 +24,7 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
     MatProgressSpinnerModule,
     MatChipsModule,
     MatAutocompleteModule,
+    MatMenuModule,
   ],
   exports: [
     MatIconModule,
@@ -32,6 +34,7 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
     MatProgressSpinnerModule,
     MatChipsModule,
     MatAutocompleteModule,
+    MatMenuModule,
   ]
 })
 export class UiModule { }
