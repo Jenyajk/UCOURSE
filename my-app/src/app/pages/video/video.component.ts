@@ -1,34 +1,30 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {YoutubeApiService} from "../../core/services/youtube-api.service";
+
 
 @Component({
   selector: 'app-video',
   template: `
-    <h2>{{ title }}</h2>
-    <div id="player"></div>
+    <youtube-player
+      videoId="mEZj_US42wE"
+      suggestedQuality="highres"
+      [height]="600"
+      [width]="1080"
+      [startSeconds]="43"
+      [endSeconds]="60">
+    </youtube-player>
   `,
   styles: []
 })
 export class VideoComponent implements OnInit {
-  @Input() title!: string;
-  @Input() videoId!: string;
+
+
+  constructor() {}
 
   ngOnInit() {
-    this.loadYouTubePlayer();
-  }
-
-  loadYouTubePlayer() {
-    // Загрузка и инициализация YouTube Player API
     const tag = document.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';
     document.body.appendChild(tag);
-
-    // Создание проигрывателя при загрузке API
-    (window as any).onYouTubeIframeAPIReady = () => {
-      new (window as any).YT.Player('player', {
-        videoId: this.videoId,
-        width: 640,
-        height: 360,
-      });
-    };
   }
+
 }
