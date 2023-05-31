@@ -10,6 +10,15 @@
         <input type="text" class="search__input" placeholder="Type to search" >
       </form>
     </div>
+    <div class="navigate">
+    <div class="menu-nav">
+      <button mat-button [matMenuTriggerFor]="menu" >Courses</button>
+      <mat-menu #menu="matMenu" >
+        <button mat-menu-item>Math</button>
+        <button mat-menu-item>IT</button>
+      </mat-menu>
+    </div>
+  </div>
     <div class="login">
       <mat-icon class="ico-login" *ngIf="login" (click)="inLogin()">login</mat-icon>
       <mat-icon  class="ico-logout" *ngIf="!login"  (click)="inLogin()">logout</mat-icon>
@@ -18,12 +27,4 @@
   </div>
 
 </header>
-<div class="navigate">
-  <div class="menu-nav">
-    <button mat-button [matMenuTriggerFor]="menu" >Courses</button>
-    <mat-menu #menu="matMenu" >
-      <button mat-menu-item>Math</button>
-      <button mat-menu-item>IT</button>
-    </mat-menu>
-  </div>
-</div>
+

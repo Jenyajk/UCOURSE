@@ -6,7 +6,7 @@ import {YoutubeApiService} from "../../core/services/youtube-api.service";
   selector: 'app-video',
   template: `
     <youtube-player
-      videoId="mEZj_US42wE"
+      videoId="XzLuMtDelGk"
       suggestedQuality="highres"
       [height]="600"
       [width]="1080"
