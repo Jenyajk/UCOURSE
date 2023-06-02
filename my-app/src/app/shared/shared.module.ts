@@ -10,6 +10,10 @@ import {MatButtonModule} from "@angular/material/button";
 import {VideoPlayerComponent} from "../components/video-player/video-player.component";
 import {YouTubePlayerModule} from "@angular/youtube-player";
 import {VideoComponent} from "../pages/video/video.component";
+import {MatCardModule} from "@angular/material/card";
+import {MathComponent} from "../pages/math/math.component";
+import {ItComponent} from "../pages/it/it.component";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -21,6 +25,8 @@ import {VideoComponent} from "../pages/video/video.component";
     FooterComponent,
     VideoPlayerComponent,
     VideoComponent,
+    MathComponent,
+    ItComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +34,8 @@ import {VideoComponent} from "../pages/video/video.component";
     MatMenuModule,
     MatButtonModule,
     YouTubePlayerModule,
+    MatCardModule,
+    RouterModule,
   ],
   exports: [
     UiModule,
@@ -38,6 +46,8 @@ import {VideoComponent} from "../pages/video/video.component";
     MatButtonModule,
     VideoPlayerComponent,
     VideoComponent,
+    MathComponent,
+    ItComponent
   ]
 })
 export class SharedModule { }
