@@ -1,12 +1,13 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA} from "@angular/material/dialog";
 
+
 @Component({
-  selector: 'app-video-player',
-  template: ``,
+  selector: 'app-video',
+  templateUrl: 'video.component.html',
   styles: []
 })
-export class VideoPlayerComponent implements OnInit{
+export class VideoComponent implements OnInit {
   video: any;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) {

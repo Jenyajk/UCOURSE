@@ -6,6 +6,8 @@ import { CoreModule } from "./core/core.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from "@angular/material/menu";
 import {CommonModule} from "@angular/common";
+import {YouTubePlayerModule} from "@angular/youtube-player";
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
@@ -19,11 +21,15 @@ import {CommonModule} from "@angular/common";
     CoreModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    YouTubePlayerModule,
+    MatDialogModule
   ],
   exports: [
     CoreModule,
     MatMenuModule,
+    YouTubePlayerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
