@@ -9,10 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
   public status!: boolean;
   public userInfo!: string;
-
   public login: boolean = true;
 
   inLogin() {

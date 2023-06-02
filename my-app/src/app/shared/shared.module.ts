@@ -9,11 +9,12 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatButtonModule} from "@angular/material/button";
 import {VideoPlayerComponent} from "../components/video-player/video-player.component";
 import {YouTubePlayerModule} from "@angular/youtube-player";
-import {VideoComponent} from "../pages/video/video.component";
+import {VideoComponent} from "../components/video/video.component";
 import {MatCardModule} from "@angular/material/card";
 import {MathComponent} from "../pages/math/math.component";
 import {ItComponent} from "../pages/it/it.component";
 import {RouterModule} from "@angular/router";
+import {DialogModule} from '@angular/cdk/dialog';
 
 
 
@@ -36,6 +37,7 @@ import {RouterModule} from "@angular/router";
     YouTubePlayerModule,
     MatCardModule,
     RouterModule,
+    DialogModule
   ],
   exports: [
     UiModule,
@@ -47,7 +49,8 @@ import {RouterModule} from "@angular/router";
     VideoPlayerComponent,
     VideoComponent,
     MathComponent,
-    ItComponent
+    ItComponent,
+    DialogModule
   ]
 })
 export class SharedModule { }
