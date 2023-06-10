@@ -10,63 +10,70 @@ import {VideoComponent} from "../../components/video/video.component";
 export class ItComponent  implements OnInit{
   videos = [
     {
-      title: 'React Tutorial for Beginners',
-      videoId: 'SqcY0GlETPk',
+      title: 'Data science. Dars 1.',
+      videoId: 'yTVnaBopYSs',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'React JS Explained In 10 Minutes',
-      videoId: 's2skans2dP4',
+      title: 'Data science. Dars 2.',
+      videoId: '735uBIZcIJ0',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'Node.js Crash Course',
-      videoId: 'fBNz5xF-Kx4',
+      title: 'Data science. Dars 3.',
+      videoId: 'w9Nby21iieQ',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'Node.js Crash Course Tutorial #1 - Introduction & Setup',
-      videoId: 'zb3Qk8SG5Ms',
+      title: 'Data science. Dars 4.',
+      videoId: '2HDcaM_WlVs',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'Next.js Pages, Layout, Links, Routes & Loading | Next.js 13 tutorial',
-      videoId: 'vuznUqirz5I',
+      title: 'Data science. Dars 5.',
+      videoId: 'LyaF7CenH1A',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'Learn Flexbox CSS in 8 minutes',
-      videoId: 'phWxA89Dy94',
+      title: 'Data science. Dars 6.',
+      videoId: '-i6dBPspis0',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },    {
-      title: 'You Can Learn HTML in Under 1 Hour + Project (Beginner Friendly)',
-      videoId: 'j5Oh3EawGkM',
+      title: 'Data science. Dars 7.',
+      videoId: 'kKS6TAJoXhg',
       height: 200,
       width: 300,
       startSeconds: 43,
       endSeconds: 60
     },
     {
-      title: 'Save HTML Form Data to a MySQL Database using PHP',
-      videoId: 'Y9yE98etanU',
+      title: 'Data science. Dars 8.',
+      videoId: 'db1EzkSfo3w',
+      height: 200,
+      width: 300,
+      startSeconds: 43,
+      endSeconds: 60
+    },    {
+      title: 'Data science. Dars 9.',
+      videoId: 'QLy9N8WjnV8',
       height: 200,
       width: 300,
       startSeconds: 43,

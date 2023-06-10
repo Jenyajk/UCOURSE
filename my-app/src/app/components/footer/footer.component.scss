@@ -1,8 +1,10 @@
+@import "src/styles";
+
 footer {
   display: flex;
   align-items: center;
   bottom: 0;
-  background: #303240;
+  background: $dark-blue;
   height: 30px;
   width: 100%;
   left: 0;

@@ -1,25 +1,25 @@
 header {
   display: flex;
-  background: #303240;
   align-items: center;
   gap: 20px;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 15px;
 }
 
 .wrap {
   display: flex;
   gap: 60px;
   width: 100%;
-  //background: #303240;
   justify-content: space-around;
 
 }
 
 .logo {
-  color: white;
+  width:240px;
 }
+
+
 
 .logo-wrap,
 .search-wrap,
@@ -42,7 +42,6 @@ h1 {
 }
 
 .search__input {
-  background-color: #464A5A;
 }
 
 .ico-login {
