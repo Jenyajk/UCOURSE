@@ -1,18 +1,13 @@
 <section class="wrap-course">
 
   <mat-card class="example-card" *ngFor="let video of videos">
-
-    <youtube-player
-      [videoId]="video.videoId"
-      [height]="video.height"
-      [width]="video.width"
-      [startSeconds]="video.startSeconds"
-      [endSeconds]="video.endSeconds">
-    </youtube-player>
+    <div  class="video-play">
+      <img src="assets/play2.png" alt="play video" class="video-play-img">
+    </div>
     <mat-card-title>{{video.title}}</mat-card-title>
-    <mat-card-actions>
+    <mat-card-actions class="button-wrap">
       <button mat-button  (click)="openModal( video)">WATCH</button>
-      <button mat-button>BUY</button>
+      <button mat-button >BUY</button>
     </mat-card-actions>
   </mat-card>
 </section>

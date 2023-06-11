@@ -1,8 +1,11 @@
-<h1>{{ video.title }}</h1>
-<youtube-player
-  [videoId]="video.videoId"
-  [height]="500"
-  [width]="700"
-  [startSeconds]="video.startSeconds"
-  [endSeconds]="video.endSeconds"
-></youtube-player>
+<div class="wrap-video">
+  <h1>{{ video.title }}</h1>
+  <youtube-player
+    [videoId]="video.videoId"
+    [height]="200"
+    [width]="400"
+    [startSeconds]="video.startSeconds"
+    [endSeconds]="video.endSeconds"
+  ></youtube-player>
+</div>
+
