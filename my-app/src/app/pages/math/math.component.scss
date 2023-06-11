@@ -1,8 +1,10 @@
+@import "src/styles";
+
 .example-card {
-  max-width: 300px;
+width: 300px;
+  border-radius: 10px;
 
 }
-
 
 .wrap-course {
   margin: 20px auto;
@@ -11,14 +13,33 @@
   justify-content: center;
   gap: 20px;
   width: 80%;
-
 }
-youtube-player {
-  display: block;
+
+mat-card-title{
+  height: 60px;
+  text-align: center;
+  --mat-card-title-text-size: 16px;
+  overflow: hidden;
+}
+button:hover {
+  background-color: $dark-blue;
+  color: #FFFFFF;
+}
+
+.video-play {
   width: 300px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-mat-card-title{
-  height: 100px;
-  text-align: center;
+.video-play-img {
+  width: 75px;
+}
+
+.button-wrap {
+  display: flex;
+  background-color: $light-blue;
+  justify-content: space-around;
 }

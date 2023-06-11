@@ -1,25 +1,26 @@
+@import "src/styles";
+
 header {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: center;
-  flex-direction: column;
-  padding: 15px;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .wrap {
   display: flex;
-  gap: 60px;
-  width: 100%;
-  justify-content: space-around;
-
+  gap: 30px;
 }
 
 .logo {
-  width:240px;
+  height:140px;
 }
 
-
+.login {
+  height: 40px;
+  width: 200px;
+}
 
 .logo-wrap,
 .search-wrap,
@@ -28,6 +29,15 @@ header {
   flex-direction: row;
   align-items: center;
   text-align: center;
+}
+
+.search__input {
+  width: 400px;
+  height: 34px;
+  border-radius: 10px;
+  color: $light-blue;
+  font-family: "SourceSansPro-Regular";
+  border-color: $light-blue;
 }
 
 h1 {
@@ -85,15 +95,49 @@ h1 {
   display: flex;
   color: white;
   align-items: center;
+  text-align: center;
 
-  justify-content: space-around;
+}
+button {
+  width: 100px;
+  height: 40px;
+  font-family: "SourceSansPro-Regular";
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  border-style: none;
+}
+
+.button-reg:hover {
+  background-color: $dark-blue;
+  color: #FFFFFF;
+}
+.button-login {
+  margin-right: 5px;
 }
 
 .menu-nav {
   width: 100px;
   background: rgba(70, 74, 90, 0.38);
   text-align: center;
-  margin-top: 10px;
   color: white;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
 }
+
+::ng-deep .mat-menu-panel {
+  background-color: aqua; /* Цвет фона выпадающего меню */
+  color: #333; /* Цвет текста выпадающего меню */
+  border: none; /* Удалить границу выпадающего меню */
+}
+
+::ng-deep .mat-menu-item {
+  padding: 8px 16px; /* Отступы внутри элементов меню */
+}
+
+::ng-deep .mat-menu-item:hover {
+  background-color: #ddd; /* Цвет фона при наведении на элемент меню */
+}
+
 

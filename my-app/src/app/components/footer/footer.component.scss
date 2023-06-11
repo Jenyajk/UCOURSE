@@ -3,15 +3,14 @@
 footer {
   display: flex;
   align-items: center;
-  bottom: 0;
-  background: $dark-blue;
+  background: $light-blue;
   height: 30px;
   width: 100%;
-  left: 0;
-  color: #FFFFFF;
+  color: $dark-blue;
+  gap: 5px;
+  justify-content: flex-end;
 }
 
 footer span {
-  position: absolute;
-  right: 84px;
+
 }

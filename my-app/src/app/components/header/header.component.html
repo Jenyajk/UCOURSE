@@ -1,9 +1,8 @@
 <header>
+  <div class="logo-wrap" routerLink="/" >
+  <img src="assets/alama_logo.png"  alt="logo" class="logo">
+  </div>
   <div class="wrap">
-    <div class="logo-wrap" routerLink="/" >
-     <img src="assets/alama_logo.png"  alt="logo" class="logo">
-    </div>
-
     <div class="search-wrap">
       <form class="search__form">
         <input type="text" class="search__input" placeholder="Type to search" >
@@ -11,7 +10,7 @@
     </div>
     <div class="navigate">
     <div class="menu-nav">
-      <button mat-button [matMenuTriggerFor]="menu" >Courses</button>
+      <button mat-button [matMenuTriggerFor]="menu" >Categories</button>
       <mat-menu #menu="matMenu" >
         <button mat-menu-item routerLink="/math">Math</button>
         <button mat-menu-item routerLink="/it">IT</button>
@@ -19,9 +18,11 @@
     </div>
   </div>
     <div class="login">
-      <mat-icon class="ico-login" *ngIf="login" (click)="inLogin()">login</mat-icon>
-      <mat-icon  class="ico-logout" *ngIf="!login"  (click)="inLogin()">logout</mat-icon>
-      <span class="user-login" >{{userInfo}}</span>
+      <button *ngIf="login"  class="button-login button-reg" (click)="inLogin()">Log in</button>
+      <button *ngIf="login" (click)="inLogin()" class="button-reg">Sign up</button>
+      <!--<mat-icon class="ico-login-lg" *ngIf="login" (click)="inLogin()" >login</mat-icon>-->
+      <button *ngIf="!login" (click)="inLogin()" class="button-reg">{{userInfo}}</button>
+<!--      <mat-icon  class="ico-logout-lg" *ngIf="!login"  (click)="inLogin()">logout</mat-icon>-->
     </div>
   </div>
 
