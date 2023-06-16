@@ -36,14 +36,14 @@ header {
   height: 34px;
   border-radius: 10px;
   color: $light-blue;
-  font-family: "SourceSansPro-Regular";
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   border-color: $light-blue;
 }
 
 h1 {
   color: #FFFFFF;
   font-size: 30px;
-  font-family: "SourceSansPro-Bold";
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
@@ -51,12 +51,8 @@ h1 {
   margin: 0;
 }
 
-.search__input {
-}
-
 .ico-login {
   color: white;
-
 }
 
 .user-login {
@@ -64,7 +60,7 @@ h1 {
   letter-spacing: 0;
   color: #FFFFFF;
   font-size: 14px;
-  font-family: "SourceSansPro-Regular";
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   text-transform: none;
   text-align: left;
   height: 24px;
@@ -75,37 +71,18 @@ h1 {
   color: white;
 }
 
-.button-logout {
-  line-height: 24px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-family: "SourceSansPro-Regular";
-  text-transform: none;
-  text-align: left;
-  height: 24px;
-  width: auto;
-  opacity: 1;
-  background-color: #303240;
-  border: 0;
-  padding: 0;
-}
-
-.navigate {
-  display: flex;
-  color: white;
-  align-items: center;
-  text-align: center;
-
-}
 button {
-  width: 100px;
   height: 40px;
-  font-family: "SourceSansPro-Regular";
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   border-radius: 10px;
   color: black;
   font-size: 16px;
   border-style: none;
+  background-color: $light-blue;
+}
+
+.button-reg {
+width: 100px;
 }
 
 .button-reg:hover {
@@ -117,27 +94,35 @@ button {
 }
 
 .menu-nav {
-  width: 100px;
-  background: rgba(70, 74, 90, 0.38);
   text-align: center;
   color: white;
-  align-items: center;
-  border-radius: 10px;
+}
+
+::ng-deep .mat-mdc-menu-item.mdc-list-item {
+  height: auto;
+}
+
+::ng-deep .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text{
+  font-size: 15px;
+  text-wrap: normal;
+}
+
+.button-menu {
   height: 40px;
 }
 
-::ng-deep .mat-menu-panel {
-  background-color: aqua; /* Цвет фона выпадающего меню */
-  color: #333; /* Цвет текста выпадающего меню */
-  border: none; /* Удалить границу выпадающего меню */
+.button-menu:hover {
+  background-color: $dark-blue;
+  color: #FFFFFF;
 }
 
-::ng-deep .mat-menu-item {
-  padding: 8px 16px; /* Отступы внутри элементов меню */
+.button-menu-item {
+  background-color: #FFFFFF;
 }
 
-::ng-deep .mat-menu-item:hover {
-  background-color: #ddd; /* Цвет фона при наведении на элемент меню */
+.button-menu-item:hover {
+  background-color: $light-blue;
+  color: #FFFFFF;
 }
 
 

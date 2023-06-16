@@ -8,12 +8,12 @@ import {MatMenuModule} from "@angular/material/menu";
 import {CommonModule} from "@angular/common";
 import {YouTubePlayerModule} from "@angular/youtube-player";
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     BrowserAnimationsModule,
     CommonModule,
     YouTubePlayerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   exports: [
     CoreModule,

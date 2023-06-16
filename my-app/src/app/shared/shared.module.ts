@@ -15,6 +15,11 @@ import {MathComponent} from "../pages/math/math.component";
 import {ItComponent} from "../pages/it/it.component";
 import {RouterModule} from "@angular/router";
 import {DialogModule} from '@angular/cdk/dialog';
+import {DataScienceComponent} from "../pages/data-science/data-science.component";
+import {TedComponent} from "../pages/ted/ted.component";
+import {AuthComponent} from "../pages/auth/auth.component";
+import {AlgorithmsDataComponent} from "../pages/algorithms-data/algorithms-data.component";
+import {SmmComponent} from "../pages/smm/smm.component";
 
 
 
@@ -27,17 +32,18 @@ import {DialogModule} from '@angular/cdk/dialog';
     VideoPlayerComponent,
     VideoComponent,
     MathComponent,
-    ItComponent
+    ItComponent,
+    DataScienceComponent,
+    TedComponent,
+    AuthComponent,
+    AlgorithmsDataComponent,
+    SmmComponent,
   ],
   imports: [
     CommonModule,
     UiModule,
-    MatMenuModule,
-    MatButtonModule,
     YouTubePlayerModule,
-    MatCardModule,
     RouterModule,
-    DialogModule
   ],
   exports: [
     UiModule,
@@ -45,12 +51,15 @@ import {DialogModule} from '@angular/cdk/dialog';
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    MatButtonModule,
     VideoPlayerComponent,
     VideoComponent,
     MathComponent,
     ItComponent,
-    DialogModule
+    DataScienceComponent,
+    TedComponent,
+    AuthComponent,
+    AlgorithmsDataComponent,
+    SmmComponent,
   ]
 })
 export class SharedModule { }

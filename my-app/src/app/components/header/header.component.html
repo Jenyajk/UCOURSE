@@ -10,10 +10,12 @@
     </div>
     <div class="navigate">
     <div class="menu-nav">
-      <button mat-button [matMenuTriggerFor]="menu" >Categories</button>
+      <button mat-button [matMenuTriggerFor]="menu" class="button-menu">Categories</button>
       <mat-menu #menu="matMenu" >
-        <button mat-menu-item routerLink="/math">Math</button>
-        <button mat-menu-item routerLink="/it">IT</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/smm">Smm</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/data-science">Data Science</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/ted">TED Talks</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/algorithms-data-structures">Algorithms and Structures</button>
       </mat-menu>
     </div>
   </div>

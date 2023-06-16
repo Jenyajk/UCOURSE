@@ -8,6 +8,8 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatMenuModule} from "@angular/material/menu";
+import {DialogModule} from "@angular/cdk/dialog";
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -25,16 +27,20 @@ import {MatMenuModule} from "@angular/material/menu";
     MatChipsModule,
     MatAutocompleteModule,
     MatMenuModule,
+    DialogModule,
+    MatCardModule,
   ],
   exports: [
     MatIconModule,
-    MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
     MatProgressSpinnerModule,
     MatChipsModule,
     MatAutocompleteModule,
     MatMenuModule,
+    DialogModule,
+    MatButtonModule,
+    MatCardModule,
   ]
 })
 export class UiModule { }

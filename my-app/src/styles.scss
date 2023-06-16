@@ -1,13 +1,6 @@
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.app-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-  background-size: cover;
-  background-image: url('/assets/back2.jpg');
+body { margin: 0; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 $light-blue: rgb(136, 156, 190);
