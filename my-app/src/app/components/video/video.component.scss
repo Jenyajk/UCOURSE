@@ -9,9 +9,24 @@
   flex-direction: column;
 }
 p {
-  //background-color: $dark-blue;
-  //color: #FFFFFF;
   width: 600px;
   text-align: center;
   font-size: 30px;
+}
+
+.close-dialog {
+    height: 40px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    border-style: none;
+    width: 80px;
+    cursor: pointer;
+  background-color: $light-blue;
+}
+
+.close-dialog:hover {
+  background-color: $dark-blue;
+  color: #FFFFFF;
 }

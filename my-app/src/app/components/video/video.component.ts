@@ -1,5 +1,5 @@
 import {Component, Inject, Input, OnInit} from '@angular/core';
-import {MAT_DIALOG_DATA} from "@angular/material/dialog";
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
 
 @Component({
@@ -10,10 +10,13 @@ import {MAT_DIALOG_DATA} from "@angular/material/dialog";
 export class VideoComponent implements OnInit {
   video: any;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any,
+              public dialogRef: MatDialogRef<VideoComponent>) {
     this.video = data;
   }
-
+  closeDialog(): void {
+    this.dialogRef.close();
+  }
 
   ngOnInit() {
     const tag = document.createElement('script');

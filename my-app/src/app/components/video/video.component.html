@@ -1,4 +1,5 @@
 <div class="wrap-video">
+  <button class="close-dialog" (click)=" closeDialog()">close</button>
   <p>{{ video.title }}</p>
   <youtube-player
     [videoId]="video.videoId"
