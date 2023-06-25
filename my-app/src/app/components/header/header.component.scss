@@ -78,16 +78,17 @@ button {
   color: black;
   font-size: 16px;
   border-style: none;
-  background-color: $light-blue;
 }
 
 .button-reg {
 width: 100px;
+  background-color: $light-blue;
 }
 
 .button-reg:hover {
   background-color: $dark-blue;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .button-login {
   margin-right: 5px;
@@ -109,6 +110,7 @@ width: 100px;
 
 .button-menu {
   height: 40px;
+  background-color: $light-blue;
 }
 
 .button-menu:hover {
@@ -123,6 +125,20 @@ width: 100px;
 .button-menu-item:hover {
   background-color: $light-blue;
   color: #FFFFFF;
+}
+.material-icons{
+font-size: 40px;
+  color: $light-blue;
+}
+
+.mat-icon{
+  height: 40px;
+  width: 40px;
+}
+
+.mat-icon:hover {
+  color: $dark-blue;
+  cursor: pointer;
 }
 
 

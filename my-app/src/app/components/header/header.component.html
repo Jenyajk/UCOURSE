@@ -8,6 +8,9 @@
         <input type="text" class="search__input" placeholder="Type to search" >
       </form>
     </div>
+    <button routerLink="/">
+      <mat-icon aria-hidden="false" aria-label="home icon" fontIcon="home" class="home-icon"></mat-icon>
+    </button>
     <div class="navigate">
     <div class="menu-nav">
       <button mat-button [matMenuTriggerFor]="menu" class="button-menu">Categories</button>
@@ -19,6 +22,7 @@
       </mat-menu>
     </div>
   </div>
+
     <div class="login">
       <button *ngIf="login"  class="button-login button-reg" (click)="inLogin()">Log in</button>
       <button *ngIf="login" (click)="inLogin()" class="button-reg">Sign up</button>
