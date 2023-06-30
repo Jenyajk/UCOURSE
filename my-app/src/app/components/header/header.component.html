@@ -5,7 +5,7 @@
   <div class="wrap">
     <div class="search-wrap">
       <form class="search__form">
-        <input type="text" class="search__input" placeholder="Type to search" >
+        <input type="text" class="search__input" placeholder="Qidirish uchun yozing" >
       </form>
     </div>
     <button routerLink="/">
@@ -13,19 +13,19 @@
     </button>
     <div class="navigate">
     <div class="menu-nav">
-      <button mat-button [matMenuTriggerFor]="menu" class="button-menu">Categories</button>
+      <button mat-button [matMenuTriggerFor]="menu" class="button-menu">Kurslar</button>
       <mat-menu #menu="matMenu" >
         <button mat-menu-item class="button-menu-item" routerLink="/smm">Smm</button>
-        <button mat-menu-item class="button-menu-item" routerLink="/data-science">Data Science</button>
-        <button mat-menu-item class="button-menu-item" routerLink="/ted">TED Talks</button>
-        <button mat-menu-item class="button-menu-item" routerLink="/algorithms-data-structures">Algorithms and Structures</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/data-science">Data sayns</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/ted">TED suhbatlari</button>
+        <button mat-menu-item class="button-menu-item" routerLink="/algorithms-data-structures">Algoritmlar va ma'lumotlar tuzilmalari</button>
       </mat-menu>
     </div>
   </div>
 
     <div class="login">
-      <button *ngIf="login"  class="button-login button-reg" (click)="inLogin()">Log in</button>
-      <button *ngIf="login" (click)="inLogin()" class="button-reg">Sign up</button>
+      <button *ngIf="login"  class="button-login button-reg" (click)="inLogin()">Login</button>
+      <button *ngIf="login" (click)="inLogin()" class="button-reg">Registratsiya</button>
       <!--<mat-icon class="ico-login-lg" *ngIf="login" (click)="inLogin()" >login</mat-icon>-->
       <button *ngIf="!login" (click)="inLogin()" class="button-reg">{{userInfo}}</button>
 <!--      <mat-icon  class="ico-logout-lg" *ngIf="!login"  (click)="inLogin()">logout</mat-icon>-->

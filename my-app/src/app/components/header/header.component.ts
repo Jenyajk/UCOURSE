@@ -16,7 +16,7 @@ export class HeaderComponent {
   inLogin() {
     this.login = !this.login
     if (this.login === false) {
-      this.userInfo = "You login"
+      this.userInfo = "login"
     } else this.userInfo = ""
   }
 }
